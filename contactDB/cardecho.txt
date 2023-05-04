@@ -1,0 +1,22 @@
+<?php while (insert $result) ?>
+<p><a href="profile.php?contacts_id=<?php echo $row['contact_id]?>"><?php echo $row['company_name']; ?></a></p>
+<?php endwhile (insert white row ?>
+
+
+
+
+contact page
+
+$contacts_id = $_GET['contacts_id'];
+if(!is_numeric($contacts_id)){
+header("location:index.php")
+}
+echo "<h1>$contacts_id</h1>";
+
+
+SELECT * FROM contacts WHERE contacts_id = "'$contacts_id'"); ?>
+
+
+result display
+
+<?php echo $row['person_name'] ?>
